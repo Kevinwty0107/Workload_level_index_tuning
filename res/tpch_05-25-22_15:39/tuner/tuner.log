@@ -1,0 +1,10 @@
+/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+  """)
+Traceback (most recent call last):
+  File "src/baseline/postgres_tuner.py", line 338, in <module>
+    main(sys.argv)
+  File "src/baseline/postgres_tuner.py", line 332, in main
+    system_environment=system_environment,
+  File "src/baseline/postgres_tuner.py", line 84, in __init__
+    self.n_idxs = experiment_config['n_queries_per_episode']
+KeyError: 'n_queries_per_episode'

@@ -1,0 +1,23 @@
+/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+  """)
+[     1s]    INFO __main__: Running OpenTuner...
+[     1s]    INFO __main__: iteration 1/5...
+[     1s]    INFO common.postgres_system_environment: creating compound index L_QUANTITY_L_SHIPINSTRUCT_L_RECEIPTDATE_L_LINESTATUS_42 on lineitem
+[    21s]    INFO common.postgres_system_environment: creating compound index L_SUPPKEY_L_COMMITDATE_L_LINENUMBER_L_SHIPMODE_42 on lineitem
+[    28s]    INFO common.postgres_system_environment: creating compound index L_RETURNFLAG_L_SHIPMODE_L_COMMITDATE_42 on lineitem
+[    39s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_LINESTATUS_L_ORDERKEY_L_LINESTATUS_42 on lineitem
+[    49s]    INFO common.postgres_system_environment: creating compound index L_QUANTITY_L_EXTENDEDPRICE_L_LINENUMBER_42 on lineitem
+Traceback (most recent call last):
+  File "src/baseline/postgres_tuner.py", line 338, in <module>
+    main(sys.argv)
+  File "src/baseline/postgres_tuner.py", line 335, in main
+    tuner.run(experiment_config['n_opentuner_search_steps'])
+  File "src/baseline/postgres_tuner.py", line 171, in run
+    idx_time,reward, _ = self.act(configuration)
+  File "src/baseline/postgres_tuner.py", line 219, in act
+    self.system_environment.act(dict(index=system_action, table=tbl))
+  File "src/baseline/../common/../common/../common/postgres_system_environment.py", line 312, in act
+    (index, tbl, ','.join(cols)))            
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/encodings/utf_8.py", line 15, in decode
+    def decode(input, errors='strict'):
+KeyboardInterrupt

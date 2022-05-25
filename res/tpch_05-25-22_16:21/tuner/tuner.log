@@ -1,0 +1,65 @@
+/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+  """)
+[     1s]    INFO __main__: Running OpenTuner...
+[     1s]    INFO __main__: iteration 1/5...
+[     1s]    INFO common.postgres_system_environment: creating compound index L_RETURNFLAG_L_SHIPMODE_L_COMMENT_L_RECEIPTDATE_42 on lineitem
+[    26s]    INFO common.postgres_system_environment: creating compound index L_COMMENT_L_LINENUMBER_42 on lineitem
+[    37s]    INFO common.postgres_system_environment: creating compound index L_COMMITDATE_L_EXTENDEDPRICE_L_SHIPMODE_L_COMMENT_42 on lineitem
+[    52s]    INFO common.postgres_system_environment: creating compound index L_SHIPDATE_L_ORDERKEY_L_COMMENT_L_SHIPDATE_42 on lineitem
+[    65s]    INFO common.postgres_system_environment: creating compound index L_COMMENT_L_RETURNFLAG_L_SHIPINSTRUCT_L_TAX_42 on lineitem
+[    80s]    INFO common.postgres_system_environment: creating compound index L_COMMITDATE_L_SHIPINSTRUCT_L_SUPPKEY_L_LINENUMBER_42 on lineitem
+[    97s]    INFO common.postgres_system_environment: creating compound index L_SHIPMODE_L_PARTKEY_L_SHIPDATE_L_DISCOUNT_42 on lineitem
+[   115s]    INFO common.postgres_system_environment: creating compound index L_LINENUMBER_L_SHIPDATE_L_DISCOUNT_L_TAX_42 on lineitem
+[   129s]    INFO common.postgres_system_environment: creating compound index L_RETURNFLAG_L_SHIPDATE_L_SHIPMODE_L_QUANTITY_42 on lineitem
+[   151s]    INFO common.postgres_system_environment: creating compound index L_RECEIPTDATE_L_SHIPDATE_L_RETURNFLAG_L_COMMITDATE_42 on lineitem
+[   162s]    INFO common.postgres_system_environment: creating compound index L_LINENUMBER_L_LINENUMBER_42 on lineitem
+[   167s]    INFO common.postgres_system_environment: creating compound index L_SHIPMODE_L_QUANTITY_L_TAX_L_SHIPDATE_42 on lineitem
+[   199s]    INFO common.postgres_system_environment: creating compound index L_ORDERKEY_L_PARTKEY_L_RECEIPTDATE_42 on lineitem
+[   206s]    INFO common.postgres_system_environment: creating compound index L_COMMITDATE_L_EXTENDEDPRICE_L_RETURNFLAG_L_RETURNFLAG_42 on lineitem
+[   214s]    INFO common.postgres_system_environment: creating compound index L_RECEIPTDATE_L_RETURNFLAG_L_LINESTATUS_L_LINENUMBER_42 on lineitem
+[   223s]    INFO __main__: ...received reward -32.231459246500016 after 222.29970479011536 seconds
+[   223s]    INFO __main__: iteration 2/5...
+[   223s]    INFO common.postgres_system_environment: creating compound index L_DISCOUNT_L_QUANTITY_L_SHIPDATE_L_COMMENT_42 on lineitem
+[   240s]    INFO common.postgres_system_environment: creating compound index L_EXTENDEDPRICE_L_DISCOUNT_L_COMMITDATE_L_TAX_42 on lineitem
+[   249s]    INFO common.postgres_system_environment: creating compound index L_COMMENT_L_EXTENDEDPRICE_L_COMMENT_L_RETURNFLAG_42 on lineitem
+[   266s]    INFO common.postgres_system_environment: creating compound index L_ORDERKEY_L_COMMENT_L_SHIPDATE_L_QUANTITY_42 on lineitem
+[   276s]    INFO common.postgres_system_environment: creating compound index L_EXTENDEDPRICE_L_QUANTITY_L_SHIPMODE_42 on lineitem
+[   288s]    INFO common.postgres_system_environment: creating compound index L_DISCOUNT_L_DISCOUNT_L_EXTENDEDPRICE_L_EXTENDEDPRICE_42 on lineitem
+[   318s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_SHIPDATE_L_SHIPMODE_L_SHIPDATE_42 on lineitem
+[   334s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_LINENUMBER_L_SHIPMODE_L_EXTENDEDPRICE_42 on lineitem
+[   364s]    INFO common.postgres_system_environment: creating compound index L_EXTENDEDPRICE_L_SHIPMODE_L_LINESTATUS_L_EXTENDEDPRICE_42 on lineitem
+[   377s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_SHIPMODE_L_COMMENT_L_PARTKEY_42 on lineitem
+[   406s]    INFO common.postgres_system_environment: creating compound index L_LINENUMBER_L_COMMENT_L_SUPPKEY_L_DISCOUNT_42 on lineitem
+[   422s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_COMMITDATE_L_SHIPINSTRUCT_L_RETURNFLAG_42 on lineitem
+[   440s]    INFO common.postgres_system_environment: creating compound index L_SHIPDATE_L_ORDERKEY_L_PARTKEY_L_PARTKEY_42 on lineitem
+[   449s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_SUPPKEY_L_EXTENDEDPRICE_L_SUPPKEY_42 on lineitem
+[   469s]    INFO common.postgres_system_environment: creating compound index L_QUANTITY_L_SHIPDATE_L_RECEIPTDATE_L_COMMENT_42 on lineitem
+[   487s]    INFO __main__: ...received reward -36.157145652 after 263.7974531650543 seconds
+[   487s]    INFO __main__: iteration 3/5...
+[   487s]    INFO common.postgres_system_environment: creating compound index L_ORDERKEY_L_RETURNFLAG_L_RECEIPTDATE_L_TAX_42 on lineitem
+[   492s]    INFO common.postgres_system_environment: creating compound index L_LINENUMBER_L_SHIPINSTRUCT_L_RETURNFLAG_L_RECEIPTDATE_42 on lineitem
+[   504s]    INFO common.postgres_system_environment: creating compound index L_COMMITDATE_L_TAX_L_TAX_L_DISCOUNT_42 on lineitem
+[   515s]    INFO common.postgres_system_environment: creating compound index L_SUPPKEY_L_SUPPKEY_L_SUPPKEY_42 on lineitem
+[   519s]    INFO common.postgres_system_environment: creating compound index L_COMMITDATE_L_LINENUMBER_L_COMMITDATE_L_SHIPDATE_42 on lineitem
+[   524s]    INFO common.postgres_system_environment: creating compound index L_COMMENT_L_SHIPINSTRUCT_L_RETURNFLAG_L_QUANTITY_42 on lineitem
+[   536s]    INFO common.postgres_system_environment: creating compound index L_SHIPINSTRUCT_L_SHIPINSTRUCT_L_EXTENDEDPRICE_42 on lineitem
+[   568s]    INFO common.postgres_system_environment: creating compound index L_SUPPKEY_L_LINENUMBER_L_RETURNFLAG_42 on lineitem
+[   574s]    INFO common.postgres_system_environment: creating compound index L_SHIPMODE_L_DISCOUNT_L_COMMENT_L_PARTKEY_42 on lineitem
+[   600s]    INFO common.postgres_system_environment: creating compound index L_ORDERKEY_L_RECEIPTDATE_L_RETURNFLAG_L_RETURNFLAG_42 on lineitem
+[   606s]    INFO common.postgres_system_environment: creating compound index L_LINENUMBER_L_ORDERKEY_L_TAX_L_LINESTATUS_42 on lineitem
+[   612s]    INFO common.postgres_system_environment: creating compound index L_SUPPKEY_L_SHIPDATE_L_COMMITDATE_L_COMMENT_42 on lineitem
+[   620s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_LINENUMBER_L_QUANTITY_L_TAX_42 on lineitem
+Traceback (most recent call last):
+  File "src/baseline/postgres_tuner.py", line 338, in <module>
+    main(sys.argv)
+  File "src/baseline/postgres_tuner.py", line 335, in main
+    tuner.run(experiment_config['n_opentuner_search_steps'])
+  File "src/baseline/postgres_tuner.py", line 171, in run
+    idx_time,reward, _ = self.act(configuration)
+  File "src/baseline/postgres_tuner.py", line 219, in act
+    self.system_environment.act(dict(index=system_action, table=tbl))
+  File "src/baseline/../common/../common/../common/postgres_system_environment.py", line 312, in act
+    (index, tbl, ','.join(cols)))            
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/encodings/utf_8.py", line 15, in decode
+    def decode(input, errors='strict'):
+KeyboardInterrupt

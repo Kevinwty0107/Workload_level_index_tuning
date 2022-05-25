@@ -1,0 +1,31 @@
+/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+  """)
+[     1s]    INFO __main__: Running OpenTuner...
+[     1s]    INFO __main__: iteration 1/5...
+[     1s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_COMMENT_L_ORDERKEY_L_SHIPMODE_42 on lineitem
+[    18s]    INFO common.postgres_system_environment: creating compound index L_PARTKEY_L_DISCOUNT_L_DISCOUNT_L_EXTENDEDPRICE_42 on lineitem
+[    30s]    INFO common.postgres_system_environment: creating compound index L_SHIPINSTRUCT_L_PARTKEY_L_COMMITDATE_L_SHIPINSTRUCT_42 on lineitem
+[    52s]    INFO common.postgres_system_environment: creating compound index L_EXTENDEDPRICE_L_EXTENDEDPRICE_L_QUANTITY_42 on lineitem
+[    63s]    INFO common.postgres_system_environment: creating compound index L_SHIPDATE_L_PARTKEY_L_LINESTATUS_L_DISCOUNT_42 on lineitem
+[    72s]    INFO common.postgres_system_environment: creating compound index L_SHIPINSTRUCT_L_PARTKEY_L_RECEIPTDATE_L_SHIPINSTRUCT_42 on lineitem
+[   101s]    INFO common.postgres_system_environment: creating compound index L_COMMITDATE_L_EXTENDEDPRICE_L_ORDERKEY_L_COMMITDATE_42 on lineitem
+[   116s]    INFO common.postgres_system_environment: creating compound index L_SHIPINSTRUCT_L_LINESTATUS_L_SHIPMODE_42 on lineitem
+[   139s]    INFO common.postgres_system_environment: creating compound index L_RECEIPTDATE_L_EXTENDEDPRICE_L_SUPPKEY_L_COMMITDATE_42 on lineitem
+[   153s]    INFO common.postgres_system_environment: creating compound index L_SUPPKEY_L_COMMITDATE_42 on lineitem
+[   161s]    INFO common.postgres_system_environment: creating compound index L_RECEIPTDATE_L_EXTENDEDPRICE_L_TAX_L_COMMITDATE_42 on lineitem
+[   172s]    INFO common.postgres_system_environment: creating compound index L_PARTKEY_L_ORDERKEY_L_LINENUMBER_L_LINESTATUS_42 on lineitem
+[   181s]    INFO common.postgres_system_environment: creating compound index L_SUPPKEY_L_ORDERKEY_L_COMMITDATE_L_ORDERKEY_42 on lineitem
+[   190s]    INFO common.postgres_system_environment: creating compound index L_LINESTATUS_L_SUPPKEY_L_LINESTATUS_L_ORDERKEY_42 on lineitem
+[   207s]    INFO common.postgres_system_environment: creating compound index L_SHIPINSTRUCT_L_SHIPINSTRUCT_L_SHIPDATE_L_SHIPINSTRUCT_42 on lineitem
+Traceback (most recent call last):
+  File "src/baseline/postgres_tuner.py", line 338, in <module>
+    main(sys.argv)
+  File "src/baseline/postgres_tuner.py", line 335, in main
+    tuner.run(experiment_config['n_opentuner_search_steps'])
+  File "src/baseline/postgres_tuner.py", line 171, in run
+    idx_time,reward, _ = self.act(configuration)
+  File "src/baseline/postgres_tuner.py", line 231, in act
+    query_time, _ = self.system_environment.execute(query, explain=True) # TODO
+  File "src/baseline/../common/../common/../common/postgres_system_environment.py", line 119, in execute
+    for query in workload:
+TypeError: 'SQLQuery' object is not iterable

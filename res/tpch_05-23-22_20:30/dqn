@@ -1,0 +1,60 @@
+WARNING:tensorflow:From /Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+22-05-23 20:36:10:WARNING:From /Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "src/common/postgres_controller.py", line 12, in <module>
+    from agent.postgres_schema import PostgresSchema as PostgresDQNSchema
+  File "src/common/../agent/postgres_schema.py", line 8, in <module>
+    from rlgraph.spaces import IntBox, Dict
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/__init__.py", line 158, in <module>
+    import rlgraph.agents
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/agents/__init__.py", line 20, in <module>
+    from rlgraph.agents.agent import Agent
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/agents/agent.py", line 24, in <module>
+    from rlgraph.components import Component, Exploration, PreprocessorStack, Synchronizable, Policy, Optimizer, \
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/components/__init__.py", line 21, in <module>
+    from rlgraph.components.common import *
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/components/common/__init__.py", line 28, in <module>
+    from rlgraph.components.common.repeater_stack import RepeaterStack
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/components/common/repeater_stack.py", line 20, in <module>
+    from rlgraph.components.neural_networks.stack import Stack
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/components/neural_networks/__init__.py", line 23, in <module>
+    from rlgraph.components.neural_networks.variational_auto_encoder import VariationalAutoEncoder
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/components/neural_networks/variational_auto_encoder.py", line 19, in <module>
+    from rlgraph.components.distributions.normal import Normal
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/components/distributions/__init__.py", line 20, in <module>
+    from rlgraph.components.distributions.bernoulli import Bernoulli
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/rlgraph/components/distributions/bernoulli.py", line 26, in <module>
+    import tensorflow_probability as tfp
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/__init__.py", line 20, in <module>
+    from tensorflow_probability import substrates
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/substrates/__init__.py", line 17, in <module>
+    from tensorflow_probability.python.internal import all_util
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/__init__.py", line 138, in <module>
+    dir(globals()[pkg_name])  # Forces loading the package from its lazy loader.
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 57, in __dir__
+    module = self._load()
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 40, in _load
+    module = importlib.import_module(self.__name__)
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/experimental/__init__.py", line 31, in <module>
+    from tensorflow_probability.python.experimental import bijectors
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/experimental/bijectors/__init__.py", line 17, in <module>
+    from tensorflow_probability.python.bijectors.ldj_ratio import forward_log_det_jacobian_ratio
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/bijectors/__init__.py", line 42, in <module>
+    from tensorflow_probability.python.bijectors.glow import Glow
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/bijectors/glow.py", line 29, in <module>
+    from tensorflow_probability.python.bijectors import reshape
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/bijectors/reshape.py", line 36, in <module>
+    class Reshape(bijector.AutoCompositeTensorBijector):
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/bijectors/bijector.py", line 2002, in __new__
+    module_name='tfp.bijectors')
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/site-packages/tensorflow_probability/python/internal/auto_composite_tensor.py", line 599, in auto_composite_tensor
+    class _AlreadyCTTypeSpec(_AutoCompositeTensorTypeSpec):
+  File "/Users/wangtaiyi/opt/anaconda3/lib/python3.7/abc.py", line 126, in __new__
+    cls = super().__new__(mcls, name, bases, namespace, **kwargs)
+KeyboardInterrupt
